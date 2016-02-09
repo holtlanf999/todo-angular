@@ -1,0 +1,66 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>To Do App</title>
+
+    <!-- styles -->
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- autor styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- styles -->
+  </head>
+    <body ng-controller="mainCtrl as main">
+
+      <!-- write your do -->
+      <do-to-do ng-model="doToDo"></do-to-do>
+
+      <!-- to do's are stored here -->
+      <do-list ng-model="doList"></do-list>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- scripts -->
+
+      <!-- angular CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+      
+      <!-- angular scripts -->
+      <script src="app/app.module.js"></script>
+
+      <script src="app/shared/do/do.directive.js"></script>
+      <script src="app/shared/doList/doList.directive.js"></script>
+
+      <script src="app/shared/do/do.controller.js"></script>
+
+      <!--<script src="app/.js"></script>
+      <script src="app/.js"></script>
+      <script src="app/.js"></script>
+      <script src="app/.js"></script>-->
+
+
+      <!-- autor scripts-->
+      <script src="assets/js/main.js"></script>
+      <!-- scripts -->
+      
+    </body>
+</html>
